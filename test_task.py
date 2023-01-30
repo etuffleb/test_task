@@ -24,7 +24,6 @@ def find_area(image):
 
 
 def processing(image):
-    image = cv2.imread("/home/ekaterina.mikhailova@nami.local/Desktop/337.png")
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)    
     thresh = cv2.threshold(gray, 100, 255, cv2.THRESH_BINARY )[1]
     edges = cv2.Canny(thresh, 150, 150)
